@@ -257,6 +257,5 @@ async def screen_resumes(
 
 if __name__ == "__main__":
     import uvicorn
-    # PORT लाइव सर्वर के अनुसार डायनामिकली सेट होगा, लोकल पर 8000 रहेगा
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
